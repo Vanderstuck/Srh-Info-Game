@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans';
 
@@ -30,33 +31,37 @@
     --cm_abstract_bg-dark: var(--accent_1);
 }
 
-body {
+.container {
     background-color: #001624;
-
+    height: 100%;
+    width: 100%;
 }
 
-.container {
+.introBox {
     text-align: center;
     background-color:white;
     border-radius: 1em;
     border-bottom-left-radius: 0;
     width: 90%;
-    height: 90%;
-    margin: 5%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2.5%;
+    
 }
 
-.container h1 {
+.introBox h1 {
     padding-top: 0.5em;
     color: #df4807;
 }
 
-.container p {
+.introBox p {
     color: #575756;
     font-size: 1em;
     text-align: left;
     padding: 1em;
-    background-color:  #f5f4f3 ;
-    margin: 5%;
+    background-color:  #f5f4f3;
+    width: 90%;   
+    margin: auto;
 }
 
 .button {

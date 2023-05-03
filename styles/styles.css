@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+
+    transition: 150ms;
+    text-decoration: none;
+    /* border: 1px solid beige; */
+}
+
+:root {
+    --primary: #df4807;
+    --primary_toned: #c22d00;
+    --secondary: #006999;
+    --secondary_95: rgba(0, 105, 153, .95);
+    --secondary_50: rgba(0, 105, 153, .5);
+    --accent_1: #001624;
+    --accent_2: #fcc41d;
+    --accent_3: #35b6a2;
+    --accent_4: #cc0081;
+    --flow1: #ff692e;
+    --flow2: #f45c25;
+    --flow3: #e95220;
+    --font: var(--warmDarkGrey);
+    --headline: var(--font);
+    --logoMain: var(--primary);
+    --logoMeta: var(--font);
+    --nav-global_bg: var(--accent_1);
+    --stage_bar: var(--accent_1);
+    --cm_abstract_bg-dark: var(--accent_1);
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.button {
+    font-size: 25px;
+}

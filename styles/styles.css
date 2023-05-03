@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans';
-
     transition: 150ms;
     text-decoration: none;
     /* border: 1px solid beige; */
@@ -32,38 +31,71 @@
 }
 
 .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-content: space-around;
+    overflow: auto;
     background-color: #001624;
+    background-image: url("../src/leute.jpg") ;
+    background-size: cover;
     height: 100%;
     width: 100%;
 }
 
-.introBox {
+.coll-1 {
     text-align: center;
     background-color:white;
     border-radius: 1em;
     border-bottom-left-radius: 0;
     width: 90%;
     height: 80%;
-    margin: auto;
-    margin-top: 2.5%;
-    
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
+    border: 1px solid #6d7373;
 }
 
-.introBox h1 {
+.coll-1 h1 {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1.2em;
     padding-top: 0.5em;
     color: #df4807;
 }
 
-.introBox p {
+.coll-1 p {
     color: #575756;
     font-size: 1em;
     text-align: left;
     padding: 1em;
-    background-color:  #f5f4f3;
-    width: 90%;   
-    margin: auto;
+    background-color:  #f5f4f3;    
+    margin: 2em;
+    margin-top: 1em;
+    border-radius: 1em;
+
 }
 
-.button {
+.coll-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.startBtn {
+    
     font-size: 25px;
+}
+
+@media screen and (orientation: landscape){
+    .coll-1 {
+        width: 60%;
+        min-width: 30em;
+        height: 70%;
+        min-height: 20em;
+    }
+
+    .coll-2 {
+        width: 10%;
+    }
 }

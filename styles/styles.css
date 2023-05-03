@@ -87,6 +87,12 @@
     font-size: 25px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (orientation: landscape){
     .coll-1 {
         width: 60%;

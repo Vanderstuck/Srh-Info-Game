@@ -51,7 +51,6 @@
     width: 90%;
     height: 80%;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
-    border: 1px solid #6d7373;
 }
 
 .coll-1 h1 {
@@ -82,9 +81,29 @@
     align-items: center;
 }
 
+.coll-3 {
+    width: 100%;
+    order: -1;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoMain{
+    fill: #df4807;
+}
+
 .startBtn {
-    
-    font-size: 25px;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #df4807;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
 }
 
 .center {

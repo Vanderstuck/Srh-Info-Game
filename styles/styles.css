@@ -1,8 +1,18 @@
+@font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_Rg.woff);
+}
+
+@font-face {
+    font-family: SRH_Headline;
+    src: url(../font/SRH_Headline/Web/WOFF/SRHHeadline_W_Rg.woff);
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    font-family: SRH_Text, sans-serif;
     transition: 150ms;
     text-decoration: none;
     /* border: 1px solid beige; */
@@ -57,6 +67,7 @@
 }
 
 .coll-1 h1 {
+    font-family: SRHHeadline, sans-serif;
     text-align: left;
     margin-left: 3rem;
     

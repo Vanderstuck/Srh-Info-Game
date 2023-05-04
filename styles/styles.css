@@ -4,6 +4,12 @@
 }
 
 @font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_It.woff);
+    font-style: italic;
+}
+
+@font-face {
     font-family: SRH_Headline;
     src: url(../font/SRH_Headline/Web/WOFF/SRHHeadline_W_Rg.woff);
 }
@@ -66,7 +72,7 @@
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
 }
 
-.coll-1 h1 {
+h1 {
     font-family: SRHHeadline, sans-serif;
     text-align: left;
     margin-left: 3rem;
@@ -76,9 +82,8 @@
     color: #df4807;
 }
 
-.coll-1 p {
+.textBox {
     color: #575756;
-    font-size: 1em;
     text-align: left;
     padding: 1em;
     background-color:  #f5f4f3;    
@@ -87,6 +92,27 @@
     margin-bottom: 1em;
     border-radius: 1em;
     height: 70%;
+}
+
+h2 {
+    margin-bottom: 0.2em;
+    font-size: 1.1em;
+}
+
+p {
+    margin-bottom: 0.2em;
+    font-size: 1em;
+}
+
+.it {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.turnErr {
+    margin-bottom: 0.2em;
+    margin-top: 2em;
+    color: #c22d00;
 }
 
 .coll-2 {
@@ -140,6 +166,10 @@
         top: 5%;
         right: 8%;
     }
+
+    .turnErr {
+        display: none;
+    }
 }
 
 @media screen and (orientation: landscape) and (max-width: 768px){
@@ -160,12 +190,20 @@
         height: 60%;
     }
 
-    .coll-1 p {
+    p {
         font-size: 1.2em;
     }
 
-    .coll-1 h1 {
+    h1 {
         font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .it {
+        font-size: 1.1em;
     }
     
     .startBtn {
@@ -186,12 +224,20 @@
         height: 50%;
     }
 
-    .coll-1 p {
+    p {
         font-size: 1.2em;
     }
 
-    .coll-1 h1 {
+    h1 {
         font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .it {
+        font-size: 1.1em;
     }
     
     .startBtn {
@@ -206,19 +252,6 @@
         width: 45%;
         height: 60%;
     }
-
-    .coll-1 p {
-        font-size: 1.2em;
-    }
-
-    .coll-1 h1 {
-        font-size: 1.5em;
-    }
-    
-    .startBtn {
-        height: 5rem;
-        width: 5rem;
-    }
 }
 
 @media screen and (orientation: portrait) and (min-height: 1200px) {
@@ -232,17 +265,4 @@
         width: 70%;
         height: 45%;
     }
-
-    .coll-1 p {
-        font-size: 1.2em;
-    }
-
-    .coll-1 h1 {
-        font-size: 1.5em;
-    }
-    
-    .startBtn {
-        height: 5rem;
-        width: 5rem;
-    }
-}
+}    

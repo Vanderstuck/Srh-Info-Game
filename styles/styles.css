@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    align-content: space-around;
+    align-content: space-evenly;
     overflow: auto;
     background-color: #001624;
     background-image: url("../src/leute.jpg") ;
@@ -44,19 +44,22 @@
 }
 
 .coll-1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
     text-align: center;
     background-color:white;
     border-radius: 1em;
     border-bottom-left-radius: 0;
     width: 90%;
-    height: 80%;
+    height: 70%;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
 }
 
 .coll-1 h1 {
     text-align: left;
     margin-left: 3rem;
-    margin-top: 1rem;
+    
     font-size: 1.2em;
     padding-top: 0.5em;
     color: #df4807;
@@ -68,10 +71,11 @@
     text-align: left;
     padding: 1em;
     background-color:  #f5f4f3;    
-    margin: 2em;
-    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
     border-radius: 1em;
-
+    height: 70%;
 }
 
 .coll-2 {
@@ -82,14 +86,8 @@
 }
 
 .coll-3 {
-    width: 100%;
+    width: 25%;
     order: -1;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .logoMain{
@@ -113,6 +111,7 @@
 }
 
 @media screen and (orientation: landscape){
+
     .coll-1 {
         width: 60%;
         min-width: 30em;
@@ -123,4 +122,22 @@
     .coll-2 {
         width: 10%;
     }
+
+    .coll-3{
+        width: 14%;
+        position: fixed;
+        top: 5%;
+        right: 8%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+
+    .coll-3{
+        width: 12%;
+        position: fixed;
+        top: 5%;
+        right: 5%;
+    }
+
 }

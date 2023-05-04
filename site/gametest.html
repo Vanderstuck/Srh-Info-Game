@@ -7,18 +7,25 @@
     <title>Auftrag 2</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/gametest.css">
+    <script type="text/javascript" src="../script/gametest.js"></script>
+    <script type="text/javascript" src="../script/jquery.maphighlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
     <div class="container-game">
         <img class="game-image center" src="../src/klassenzimmer.jpg" alt="Klassenzimmer" usemap="#klassenzimmer">
         <map name="klassenzimmer">
-            <area target="" alt="" title="" href="index.html" coords="43,61,330,88,883,100,1051,73,1046,381,886,365,359,366,84,380" shape="poly">
+            <area target="" alt="" title="" id="map1" href="index.html" coords="43,61,330,88,883,100,1051,73,1046,381,886,365,359,366,84,380" shape="poly">
         </map>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="../script/imageMapResizer.min.js"></script>
-    <script type="text/javascript"> $('map').imageMapResize(); </script>
+    <script 
+        type="text/javascript"> $('map').imageMapResize();
+        $('klassenzimmer').maphighlight();
+     </script>
 </body>
 
 </html>

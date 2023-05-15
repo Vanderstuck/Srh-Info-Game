@@ -1,0 +1,76 @@
+@font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_Rg.woff);
+}
+
+@font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_It.woff);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SRH_Headline;
+    src: url(../font/SRH_Headline/Web/WOFF/SRHHeadline_W_Rg.woff);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SRH_Text, sans-serif;
+    transition: 150ms;
+    text-decoration: none;
+    /* border: 1px solid beige; */
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    overflow: auto;
+    background-color: #001725;
+    height: 100%;
+    width: 100%;
+}
+
+.coll-1 {
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+    background-color:deepskyblue;
+}
+
+.coll-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    text-align: center;
+    background-color:white;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    width: 90%;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
+    z-index: 1;
+}
+
+.bg-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../src/leute.jpg") ;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    z-index: 0;
+}
+
+.logoMain{
+    fill: #df4807;
+}
+
+svg {
+    padding: 0.5em;
+    height: 100%;
+}

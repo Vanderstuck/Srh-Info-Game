@@ -22,6 +22,10 @@
   'opsz' 40
 }
 
+body{
+    background-color: #001725;
+}
+
 * {
     margin: 0px;
     padding: 0px;

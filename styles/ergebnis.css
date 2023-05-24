@@ -35,10 +35,11 @@
 }
 
 body{
-    background-color: #001725;
+    background-color: #fff;
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -49,35 +50,50 @@ body{
 }
 
 .coll-1 {
-    height: 15%;
+    height: 10%;
     width: 100%;
-    z-index: 1;
 }
 
-.coll-2 {
+.coll-2{
+    width: 90%;
+}
+
+.coll-3 {
     text-align: center;
     background-color:#f5f4f3;
     border-radius: 1em;
     border-bottom-left-radius: 0;
     width: 90%;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.08);
-    z-index: 1;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 33%;
 }
 
 .bg-wrapper{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../src/leute.jpg") ;
-    background-size: cover;
-    height: 83.5%;
+    height: 101%;
     width: 100%;
     z-index: 0;
 }
 
+.bg {
+    background-image: url("../src/test2.png") ;
+    background-size: cover;
+    height: 67%;
+}
+
+.bar {
+    background-color: #001725;
+    height: 33%;
+    width: 100%;
+}
+
 .logoMain{
+    fill: #df4807;
+}
+
+.logoMeta{
     fill: #df4807;
 }
 
@@ -88,16 +104,22 @@ svg {
 
 button {
     background-color: #f5f4f3;
-    width: 90%;
+    width: 100%;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     border: none;
-    border-top: 1px solid #dddad8;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #df4807;
+    padding: 1rem;
 }
 
 h1 {
-    font-size: 1.5rem;
-    color: #df4807;
+    font-family: SRH_Headline, sans-serif;
+    font-size: 2rem;
+    color: #fff;
     padding: 1rem;
 }
 
@@ -106,42 +128,74 @@ p {
 }
 
 .info-bar {
+    background-color: #f5f4f3;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
 }
 
 .title {
+    font-family: SRH_Headline, sans-serif;
+    width: 81%;
+    margin: auto;
+    padding-top: 1rem;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
     color: #575756;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.info-box , .ergebis-intro{
+.intro {
+    height: 105%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: space-between;
+    z-index: 1;
+}
+
+.info-box , .intro-text{
     text-align: justify;
     color: #575756;
-    width: 90%;
     margin: auto;
     padding-bottom: 1em;
     padding-top: 0.5em;
 }
 
+.intro-text {
+    width: 90%;
+}
+
+.info-box {
+    width: 81%;
+}
+
 .item-wrapper {
+    aspect-ratio: 1/1;
     display: flex;
-    align-content: space-evenly;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
     width: 100%;
     padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding-top: 1em;
+}
+
+.gesund > .info-box > .item-wrapper {
+    aspect-ratio: 1 / 1.33;
 }
 
 .item {
-    height: 3rem;
-    width: 3rem;
-    border: 2px solid #df4807;
+    aspect-ratio: 1/1;
+    width: 26%;
+    border: 2px solid #575756;
+    margin: 0.1em;
+}
+
+.item.found{
+    border-color: #df4807;
 }
 
 .item:first-of-type {
@@ -152,43 +206,46 @@ p {
     border-radius: 0 25% 25% 0;
 }
 
+@media screen and (orientation: landscape){
+
+    .coll-1 {
+        height: 15%;
+    }
+    
+    .coll-3{
+        margin-bottom: 0%;
+    }
+
+    .bg-wrapper{
+        height: 115%;
+    }
+    
+    .bg {
+        height: 60%;
+    }
+    
+    .bar {
+        height: 40%;
+    }
+}
+
 @media screen and (max-width: 375px){
 
-    .item {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
 }
 
 @media screen and (min-width: 576px){
 
-    .item {
-        height: 4rem;
-        width: 4rem;
-    }
 }
 
 @media screen and (min-width: 768px){
 
-    .item {
-        height: 4.5rem;
-        width: 4.5rem;
-    }
 
-    .coll-2 {
-        width: 75%;
-    }
 }
 
 @media screen and (min-width: 768px) and (orientation: portrait){
 
-    .item {
-        height: 4.5rem;
-        width: 4.5rem;
-    }
-
     .title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     
     p {
@@ -202,13 +259,8 @@ p {
 
 @media screen and (min-width: 992px){
 
-    .item {
-        height: 5.5rem;
-        width: 5.5rem;
-    }
-
     .title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     
     p {
@@ -222,13 +274,8 @@ p {
 
 @media screen and (min-width: 1200px){
 
-    .item {
-        height: 6.5rem;
-        width: 6.5rem;
-    }
-
     .title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     
     p {

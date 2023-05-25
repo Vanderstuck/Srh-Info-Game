@@ -1,0 +1,158 @@
+@font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_Rg.woff);
+}
+
+@font-face {
+    font-family: SRH_Text;
+    src: url(../font/SRH_Text/Web/WOFF/SRHText_W_It.woff);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SRH_Headline;
+    src: url(../font/SRH_Headline/Web/WOFF/SRHHeadline_W_Rg.woff);
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 24;
+  font-size: 16px !important; 
+  height: 16px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SRH_Text, sans-serif;
+    transition: 150ms;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    /* border: 1px solid beige; */
+}
+
+body{
+    background-color: #fff;
+    color: #575756;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    align-content: flex-start;
+    overflow: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+.coll-1 {
+    width: 100%;
+    height: 3.5rem;
+    background-color:#f5f4f3;
+}
+
+.coll-2 {
+    background-color:#f5f4f3;
+    width: 100%;
+    padding: 2em;
+}
+
+.coll-3 {
+    width: 100%;
+    padding: 2em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 4em;
+}
+
+h1 {
+    font-family: SRH_Headline, sans-serif;
+    font-size: 2.25rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: #171717;
+    text-decoration: underline;
+}
+
+.backlink {
+    display: flex; 
+    flex-flow: nowrap;
+    color: #df4807;
+    text-decoration: none;
+}
+
+svg {
+    padding: 0.66em;
+    padding-left: 1em;
+    height: 100%;
+}
+
+p {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.logoMain{
+    fill: #df4807;
+}
+
+.logoMeta{
+    fill: #575756;
+}
+
+.linktext {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 6.5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.footer_bottom {
+    margin-top: auto;
+    background-color: #df4807;
+    height: 11em;
+    width: 100%;
+    padding: 1.2em;
+    padding-left: 5.5em;
+}
+
+.footerlinks {
+    height: 1em;
+    padding-left: 1em;
+}
+
+.footerlinks > a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_bottom > .logo {
+    padding-bottom: 2em;
+    height: 6.5em;
+}
+
+.footer_bottom > .logo > .logoMain, .footer_bottom > .logo >.logoMeta {
+    fill: #fff;
+}
+
+@media screen and (max-width: 576px){
+    .footer_bottom {
+        padding-left: 1em;
+    }
+}

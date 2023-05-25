@@ -59,3 +59,9 @@ img[usemap] {
     background-color: var(--primary);
     border-radius: 12px;
 }
+
+.game-image {
+    position: absolute;
+    top: 0;
+    
+}

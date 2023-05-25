@@ -16,6 +16,7 @@ function startTimer(duration, display) {
 
     if (--timer < 0) {
       //window.location.replace("ergebnis.html");
+      timer = duration;
     }
   }, 1000);
 }

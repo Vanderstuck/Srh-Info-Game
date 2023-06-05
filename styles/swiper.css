@@ -1,8 +1,10 @@
 .swiper {
     width: 100%;
     margin-top: 40px;
+    aspect-ratio: 4/1;
 }
 
 .swiper-slide {
     padding-right: 1px;
 }
+

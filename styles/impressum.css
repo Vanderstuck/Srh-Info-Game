@@ -65,7 +65,7 @@ body{
 
 .coll-3 {
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 4em;
@@ -78,9 +78,18 @@ h1 {
     padding-bottom: 30px;
 }
 
+h3 {
+    font-family: SRH_Headline, sans-serif;
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 32px;
+}
+
 a {
     color: #171717;
     text-decoration: underline;
+    padding-right: 1em;
+    width: 8em;
 }
 
 .backlink {
@@ -97,6 +106,8 @@ svg {
 }
 
 p {
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 15px;
     line-height: 28px;
 }
@@ -132,11 +143,16 @@ strong {
 }
 
 .footerlinks {
+    width: 100%;
     height: 1em;
     padding-left: 1em;
 }
 
-.footerlinks > a {
+.copyright {
+    padding-right: 1em;
+}
+
+.footerlinks > a, .copyright {
     font-size: 13px;
     color: #fff;
     text-decoration: none;
@@ -153,6 +169,44 @@ strong {
 
 @media screen and (max-width: 576px){
     .footer_bottom {
-        padding-left: 1em;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .coll-3 {
+        padding: 2em;
+        padding-left: 5em;
+        width: 55%;
+    }
+
+    .coll-2 {
+
+        padding: 2em;
+        padding-left: 5em;
+    }
+
+    .coll-1 {
+        height: 5.5rem;
+    }
+
+    svg {
+        padding-left: 2em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }  
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    .footerlinks > a {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }

@@ -12,12 +12,14 @@
 
 <body>
     <div class="container-game">
-        <img class="game-image center" src="../src/raum1/Hintergrund.png">
-        <img class="game-image center" src="../src/raum1/3DBuchstaben.png">
-        <img class="game-image center" src="../src/raum1/Bilderbuch.png">
-        <img class="game-image center" src="../src/raum1/Handtuch.png">
-        <img class="game-image center" src="../src/raum1/Logopädiebuch.png">
-        <img class="game-image center" src="../src/raum1/Obstschale.png">
+        <div class="game-images">
+            <img class="game-image center" src="../src/raum1/Hintergrund.png">
+            <img id="1" class="game-image center" src="../src/raum1/3DBuchstaben.png">
+            <img id="2" class="game-image center" src="../src/raum1/Bilderbuch.png">
+            <img id="3" class="game-image center" src="../src/raum1/Handtuch.png">
+            <img id="4" class="game-image center" src="../src/raum1/Logopädiebuch.png">
+            <img id="5" class="game-image center collected" src="../src/raum1/Obstschale.png">
+        </div>
         <div class="ui">
             <div class="ui_timer" id="timer">
                 05:00
@@ -38,6 +40,18 @@
             </button>
         </div>
     </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="overlay-text">
+
+            </div>
+            <button id="closeOverlay" class="btn overlay-btn">
+                Einsammeln & Weitersuchen
+            </button>
+        </div>
+    </div>
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="../script/imageMapResizer.min.js"></script>
     <script type="text/javascript" src="../script/gametest.js"></script>

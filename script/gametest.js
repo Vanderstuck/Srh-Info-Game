@@ -19,8 +19,7 @@ function startTimer(duration, display) {
 }
 
 function init() {
-  var gameItems = document.getElementsByClassName("game-image");
-  var overlay = document.getElementById("overlay");
+  var gameItems = document.getElementsByClassName("item");
   var closeOverlay = document.getElementById("closeOverlay");
   for (var i = 0; i < gameItems.length; i++) {
       gameItems[i].addEventListener("click", function () {

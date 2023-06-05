@@ -78,7 +78,7 @@ body{
 }
 
 .bg {
-    background-image: url("../src/test2.png") ;
+    background-image: url("../src/iStock-1348870264.jpg") ;
     background-size: cover;
     height: 67%;
 }
@@ -125,6 +125,13 @@ h1 {
 
 p {
     font-size: 1em;
+}
+
+a {
+    color: #171717;
+    text-decoration: underline;
+    padding-right: 1em;
+    width: 8em;
 }
 
 .info-bar {
@@ -215,6 +222,44 @@ p {
     border-radius: 0 25% 25% 0;
 }
 
+strong {
+    font-weight: 700;
+}
+
+.footer_bottom {
+    margin-top: auto;
+    background-color: #df4807;
+    height: 11em;
+    width: 100%;
+    padding: 1.2em;
+    padding-left: 5.5em;
+}
+
+.footerlinks {
+    width: 100%;
+    height: 1em;
+    padding-left: 1em;
+}
+
+.copyright {
+    padding-right: 1em;
+}
+
+.footerlinks > a, .copyright {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_bottom > .logo {
+    padding-bottom: 2em;
+    height: 6.5em;
+}
+
+.footer_bottom > .logo > .logoMain, .footer_bottom > .logo >.logoMeta {
+    fill: #fff;
+}
+
 @media screen and (orientation: landscape){
 
     .coll-1 {
@@ -240,6 +285,12 @@ p {
 
 @media screen and (max-width: 375px){
 
+}
+
+@media screen and (max-width: 576px){
+    .footer_bottom {
+        padding-left: 1rem;
+    }
 }
 
 @media screen and (min-width: 576px){
@@ -279,6 +330,10 @@ p {
     .material-symbols-rounded {
         font-size: 36px !important; 
     }  
+
+    .footerlinks > a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1200px){

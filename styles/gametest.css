@@ -21,6 +21,7 @@ img[usemap] {
     top: 0;
     left: 0;
     padding: 40px;
+    pointer-events: none;
 }
 
 .ui_top-right {
@@ -78,8 +79,7 @@ img[usemap] {
 }
 
 .overlay {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: absolute;
     top: 0;
     width: 100vw;
@@ -87,6 +87,13 @@ img[usemap] {
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 24px;
+}
+
+.overlay-content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
 }
 
 .overlay-text {

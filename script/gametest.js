@@ -1,3 +1,5 @@
+let inventory = new Array(30).fill(0);
+
 function startTimer(duration, display) {
   var timer = duration,
     minutes,
@@ -22,23 +24,33 @@ function init() {
   var gameItems = document.getElementsByClassName("item");
   var closeOverlay = document.getElementById("closeOverlay");
   for (var i = 0; i < gameItems.length; i++) {
-      gameItems[i].addEventListener("click", function () {
-        addOverlay();
-      });
+      gameItems[i].addEventListener("click", handler);
   }
   closeOverlay.addEventListener("click", function () {
     removeOverlay();
   });
 }
 
-function addOverlay() {
+function addOverlay(clickedId) {
+  console.log(items[clickedId].name);
   var overlay = document.getElementById("overlay");
+  var overlayText = document.getElementById("overlayText");
+  var item = document.getElementById(clickedId);
+  overlayText.innerHTML = items[clickedId].name;
   overlay.style.display = "block";
+  inventory[clickedId] = 1;
+  item.removeEventListener("click", handler);
+  let jsonInventory = JSON.stringify(inventory);
+  localStorage.setItem('inventory', jsonInventory);
 }
 
 function removeOverlay() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "none";
+}
+
+function handler() {
+  addOverlay(this.id);
 }
 
 //window.onload = function () {

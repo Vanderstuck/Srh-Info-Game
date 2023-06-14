@@ -17,7 +17,7 @@ img[usemap] {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 0;
     top: 0;
     left: 0;
     padding: 40px;
@@ -31,6 +31,7 @@ img[usemap] {
     display: flex;
     flex-flow: row;
     gap: 16px;
+    pointer-events: auto;
 }
 
 .ui_arrow-left {
@@ -40,6 +41,7 @@ img[usemap] {
     bottom: 0;
     left: 16px;
     margin: auto 0;
+    pointer-events: auto;
 }
 
 .ui_arrow-right {
@@ -48,6 +50,7 @@ img[usemap] {
     bottom: 0;
     right: 16px;
     margin: auto 0;
+    pointer-events: auto;
 }
 
 .ui_timer {
@@ -97,11 +100,17 @@ img[usemap] {
 }
 
 .overlay-text {
+    display: flex;
     flex-grow: 1;
     background-color: white;
     border-radius: 16px;
     border: 1px solid var(--primary_toned);
     margin-bottom: 16px;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .overlay-btn {

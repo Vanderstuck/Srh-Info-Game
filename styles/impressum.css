@@ -131,6 +131,7 @@ p {
 }
 
 strong {
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -210,6 +211,10 @@ strong {
     }
 
     p {
+        font-size: 18px;
+    }
+
+    strong {
         font-size: 18px;
     }
 }

@@ -7,7 +7,7 @@ function init() {
   var closeOverlay = document.getElementById("closeOverlay");
   for (var i = 0; i < gameItems.length; i++) {
     gameItems[i].addEventListener("click", handler);
-    gameItems[i].innerHTML = items[i].name;
+    gameItems[i].innerHTML = '<img src='+items[i].img+'>';
   }
   closeOverlay.addEventListener("click", function () {
     removeOverlay();

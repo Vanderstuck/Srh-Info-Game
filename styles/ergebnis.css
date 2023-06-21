@@ -224,6 +224,11 @@ a {
     justify-content: center;
 }
 
+.item > img {
+    width: 100%;
+    height: auto;
+}
+
 .item.found{
     border-color: #df4807;
 }

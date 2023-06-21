@@ -94,25 +94,24 @@ img[usemap] {
 
 .overlay-content {
     display: flex;
-    flex-flow: column;
-    height: 100%;
-    width: 100%;
-}
-
-.overlay-text {
-    display: flex;
     flex-grow: 1;
+    flex-direction: column;
     background-color: white;
     border-radius: 16px;
     border: 1px solid var(--primary_toned);
     margin-bottom: 16px;
     padding: 16px;
     align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay-text {
     font-size: 3em;
     font-weight: bold;
 }
 
 .overlay-btn {
     align-self: center;
+    margin-top: auto;
 }

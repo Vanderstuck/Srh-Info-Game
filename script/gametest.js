@@ -36,6 +36,7 @@ function addOverlay(clickedId) {
   var overlay = document.getElementById("overlay");
   var overlayText = document.getElementById("overlayText");
   var item = document.getElementById(clickedId);
+  overlayImage.innerHTML = "<img src=" + items[clickedId].img + ">";
   overlayText.innerHTML = items[clickedId].name;
   overlay.style.display = "block";
   inventory[clickedId] = 1;

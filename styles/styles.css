@@ -169,7 +169,7 @@ p {
     z-index: 1;
 }
 
-svg {
+.logo {
     overflow: visible;
     padding: 0.66em;
     padding-left: 1em;

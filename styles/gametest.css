@@ -20,7 +20,6 @@ img[usemap] {
     z-index: 0;
     top: 0;
     left: 0;
-    padding: 40px;
     pointer-events: none;
 }
 
@@ -83,6 +82,8 @@ img[usemap] {
 
 .overlay {
     display: none;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     width: 100vw;
@@ -94,12 +95,12 @@ img[usemap] {
 
 .overlay-content {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    background-color: white;
-    border-radius: 16px;
-    border: 1px solid var(--primary_toned);
-    margin-bottom: 16px;
+    border-radius: 16px 0 16px 16px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .08);
+    color: #fff;
+    background-color: #001624;
+    max-width: 50%;
     padding: 16px;
     align-items: center;
     height: 100%;

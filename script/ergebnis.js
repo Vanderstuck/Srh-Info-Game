@@ -20,7 +20,8 @@ function addOverlay(clickedId) {
   var overlay = document.getElementById("overlay");
   var overlayText = document.getElementById("overlayText");
   var item = document.getElementById(clickedId);
-  overlayText.innerHTML = items[clickedId].name;
+  overlayText.innerHTML = "<h1>" + items[clickedId].name + "</h1><p>" + items[clickedId].description + "</p>";
+  overlayImage.innerHTML = "<img src=" + items[clickedId].img + ">";
   overlay.style.display = "block";
 }
 
@@ -39,7 +40,7 @@ function initInventory() {
         if (inventory[i]) {
             index = i.toString();
             var item = document.getElementById(index);
-            item.classList.add('found');
+            item.parentElement.classList.add('found');
         }
     }
 }

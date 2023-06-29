@@ -1,4 +1,5 @@
 let inventory = new Array(30).fill(0);
+var counter = 0;
 
 function startTimer(duration, display) {
   var timer = duration,
@@ -29,6 +30,9 @@ function init() {
   closeOverlay.addEventListener("click", function () {
     removeOverlay();
   });
+  counter = 0;
+  var counterUI = document.getElementById("counter");
+  counterUI.innerHTML = counter + "/ 18";
 }
 
 function addOverlay(clickedId) {
@@ -38,7 +42,7 @@ function addOverlay(clickedId) {
   var item = document.getElementById(clickedId);
   overlayImage.innerHTML = "<img src=" + items[clickedId].img + ">";
   overlayText.innerHTML = items[clickedId].name;
-  overlay.style.display = "block";
+  overlay.style.display = "flex";
   inventory[clickedId] = 1;
   item.removeEventListener("click", handler);
   let jsonInventory = JSON.stringify(inventory);
@@ -46,6 +50,9 @@ function addOverlay(clickedId) {
 }
 
 function removeOverlay() {
+  counter = ++counter;
+  var counterUI = document.getElementById("counter");
+  counterUI.innerHTML = counter + " / 18";
   var overlay = document.getElementById("overlay");
   overlay.style.display = "none";
 }

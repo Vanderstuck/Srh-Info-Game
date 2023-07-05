@@ -51,7 +51,7 @@ body{
 
 .coll-1 {
     height: 10%;
-    width: 100%;
+    width: 100vw;
     background-color:#f5f4f3;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,.05);
     border-bottom-color: rgba(0,0,0,.05)
@@ -165,6 +165,7 @@ a {
     justify-content: space-between;
     color: #575756;
     font-size: 1.5rem;
+    color: #df4807;
 }
 
 .intro {
@@ -226,6 +227,10 @@ a {
     filter: grayscale(1);
 }
 
+.swiper-slide {
+    order: 1;
+}
+
 .item > img {
     width: 100%;
     height: auto;
@@ -234,7 +239,14 @@ a {
 .found > .item {
     border-color: #df4807;
     filter: grayscale(0);
+    background-color: white;
 }
+
+.found {
+    order: 0;
+}
+
+/*
 
 .swiper-slide:first-of-type > .item {
     border-radius: 25% 0 0 0;
@@ -242,7 +254,9 @@ a {
 
 .swiper-slide:last-child > .item { 
     border-radius: 0 25% 25% 0;
-}
+} 
+
+*/
 
 strong {
     font-weight: 700;
@@ -390,21 +404,29 @@ strong {
 
 .overlay {
     display: none;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     width: 100vw;
     height: 100vh;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 128px;
 }
 
 .overlay-content {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 32px;
+    border-radius: 16px 0 16px 16px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .08);
+    color: #fff;
+    background-color: #001624;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+    padding: 64px;
+    max-width: 50%;
 }
 
 .overlay-text {
@@ -412,12 +434,11 @@ strong {
     flex-grow: 1;
     flex-direction: column;
     flex-direction: column;
-    gap: 32px;
-    border-radius: 16px 0 16px 16px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .08);
-    color: #fff;
-    background-color: #001624;
     align-items: center;
-    padding: 64px;
     justify-content: center;
+}
+
+.overlay-image > img {
+    width: 256px;
+    height: auto;
 }

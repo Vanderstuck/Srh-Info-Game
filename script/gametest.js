@@ -25,7 +25,7 @@ function init() {
   var gameItems = document.getElementsByClassName("item");
   var closeOverlay = document.getElementById("closeOverlay");
   for (var i = 0; i < gameItems.length; i++) {
-      gameItems[i].addEventListener("click", handler);
+    gameItems[i].addEventListener("click", handler);
   }
   closeOverlay.addEventListener("click", function () {
     removeOverlay();
@@ -33,6 +33,10 @@ function init() {
   counter = 0;
   var counterUI = document.getElementById("counter");
   counterUI.innerHTML = counter + "/ 18";
+
+  var fiveMinutes = 5 * 60,
+  display = document.querySelector("#timer");
+  startTimer(fiveMinutes, display);
 }
 
 function addOverlay(clickedId) {
@@ -41,7 +45,7 @@ function addOverlay(clickedId) {
   var overlayText = document.getElementById("overlayText");
   var item = document.getElementById(clickedId);
   overlayImage.innerHTML = "<img src=" + items[clickedId].img + ">";
-  overlayText.innerHTML = items[clickedId].name;
+  overlayText.innerHTML = "<h1>" + items[clickedId].name + "</h1><p>" + items[clickedId].description + "</p>";
   overlay.style.display = "flex";
   inventory[clickedId] = 1;
   item.removeEventListener("click", handler);
@@ -52,7 +56,7 @@ function addOverlay(clickedId) {
 function removeOverlay() {
   counter = ++counter;
   var counterUI = document.getElementById("counter");
-  counterUI.innerHTML = counter + " / 18";
+  counterUI.innerHTML = counter + "  / 18";
   var overlay = document.getElementById("overlay");
   overlay.style.display = "none";
 }

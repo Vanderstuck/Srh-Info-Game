@@ -22,7 +22,7 @@ function addOverlay(clickedId) {
   var item = document.getElementById(clickedId);
   overlayText.innerHTML = "<h1>" + items[clickedId].name + "</h1><p>" + items[clickedId].description + "</p>";
   overlayImage.innerHTML = "<img src=" + items[clickedId].img + ">";
-  overlay.style.display = "block";
+  overlay.style.display = "flex";
 }
 
 function removeOverlay() {

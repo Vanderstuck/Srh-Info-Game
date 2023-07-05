@@ -22,7 +22,7 @@ var items = [
   },
   {
     id: "3",
-    img: "../src/detailansicht/Spielzeug_Detail.png",
+    img: "../src/detailansicht/Ranzen.png",
     name: "Trampolin",
     description:
       "Trampolinspringen ist ein Training für den ganzen Körper, von Kopf bis Fuß wird jede Zelle angesprochen und trainiert.",

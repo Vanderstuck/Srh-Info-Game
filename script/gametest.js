@@ -1,6 +1,15 @@
 let inventory = new Array(30).fill(0);
 var counter = 0;
 
+var swiper = new Swiper(".gameSwiper", {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".ui_arrow-right",
+    prevEl: ".ui_arrow-left",
+  },
+});
+
 function startTimer(duration, display) {
   var timer = duration,
     minutes,

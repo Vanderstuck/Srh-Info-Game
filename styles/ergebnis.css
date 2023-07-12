@@ -225,6 +225,7 @@ a {
     align-items: center;
     justify-content: center;
     filter: grayscale(1);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .08);
 }
 
 .swiper-slide {

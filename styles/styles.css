@@ -215,7 +215,6 @@ p {
     top: 0;
     left: 0;
     z-index: 5;
-    display: none;
     justify-content: center;
     flex-flow: row wrap;
     align-content: center;
@@ -275,7 +274,7 @@ input[type='checkbox'] {
     aspect-ratio: 1;
 }
 
-input[type='submit'] {
+input[type='button'] {
     align-items: center;
     background-color: #df4807;
     border-radius: 20px 20px 20px 0px;

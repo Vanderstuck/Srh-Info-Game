@@ -443,3 +443,17 @@ strong {
     width: 256px;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .overlay-content {
+        gap: 16px;
+        padding: 16px;
+        max-width: 100%;
+        margin: 16px;
+    }
+
+    .overlay-image>img {
+        max-width: 100%;
+        width: auto;
+    }
+}

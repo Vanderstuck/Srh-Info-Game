@@ -46,6 +46,18 @@ function init() {
   var fiveMinutes = 5 * 60,
   display = document.querySelector("#timer");
   startTimer(fiveMinutes, display);
+
+  setInterval(function() {
+    var itemImages = document.getElementsByClassName("st0");
+    for (var i = 0; i < gameItems.length; i++) {
+      itemImages[i].style.opacity = "1";
+    }
+    setTimeout(function() {
+      for (var i = 0; i < gameItems.length; i++) {
+        itemImages[i].style.opacity = "0";
+      }      
+    }, 1000)
+  }, 5000);
 }
 
 function addOverlay(clickedId) {
@@ -58,6 +70,7 @@ function addOverlay(clickedId) {
   overlay.style.display = "flex";
   inventory[clickedId] = 1;
   item.removeEventListener("click", handler);
+  item.classList.add("found");
   let jsonInventory = JSON.stringify(inventory);
   localStorage.setItem('inventory', jsonInventory);
 }

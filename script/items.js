@@ -8,7 +8,7 @@ var items = [
   },
   {
     id: "1",
-    img: "../src/detailansicht/Ernaehrungspyramide_Detail.png",
+    img: "../src/detailansicht/PlakatKommunikation.jpg",
     name: "Plakat mit Kommunikation",
     description:
       "Kommunikation ist das wichtigste und täglichste Verständigungsmittel zwischen Menschen. Um Probleme der Kommunikation zu heben und zu verbessern, muss man die verschiedenen Aspekte sehen und verstehen.",
@@ -22,7 +22,7 @@ var items = [
   },
   {
     id: "3",
-    img: "../src/detailansicht/Ranzen.png",
+    img: "../src/detailansicht/Trampolin.png",
     name: "Trampolin",
     description:
       "Trampolinspringen ist ein Training für den ganzen Körper, von Kopf bis Fuß wird jede Zelle angesprochen und trainiert.",
@@ -134,7 +134,7 @@ var items = [
   },
   {
     id: "19",
-    img: "../src/detailansicht/VRBrille.png",
+    img: "../src/detailansicht/FarbtopfUndPinsel.png",
     name: "Pinsel und Farbtopf",
     description:
       "Steigert in pädagogischer Anleitung die kreative Ader der Kinder und Jugendlichen. Fördert in der Erziehung auch den Ausdruck von Emotionen und beeinflusst die Persönlichkeitsentwicklung. ",

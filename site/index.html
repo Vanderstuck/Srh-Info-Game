@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auftrag 2</title>
+    <title>Willkommen</title>
     <link rel="icon" href="../src/icon.svg">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="">
@@ -26,7 +26,10 @@
                     Kannst du sie alle in der vorgegebenen Zeit finden?
                 </p>
                 <p class="it">
-                    Während dem Lesen wird die Zeit angehalten, also keine Eile!
+                    Streiche über den Bildschirm, oder benutze die Pfeile am Rand um die Ansicht zu wechseln.
+                </p>
+                <p class="it">
+                    Benutze den "Skip" Knopf in der oberen rechten Ecke, um direkt zum Ergebnis zu springen.
                 </p>
                 <p class="turnErr">
                     Bitte drehe das Display.
@@ -34,7 +37,7 @@
             </div>
         </div>
         <div class="coll-2">
-            <button class="startBtn" onclick="window.location.href='./gametest.html';" >
+            <button class="startBtn" id="play">
                 <span class="material-symbols-rounded">
                 arrow_forward_ios
                 </span>
@@ -58,7 +61,7 @@
                 <form action="">
                     <p>
                         <input type="checkbox" required name="terms" id="terms">
-                        <label for="terms">Ich habe die <a href="./datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere. <span class="mandatory">*</span></label>
+                        <label for="terms">Ich habe die <a href="./datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere. <span class="mandatory">*</span></label>
                     </p>
                     <input type="button" value="Akzeptieren" id="submit">
                     <p class="small"><span class="mandatory">*</span> Pflichtangabe</p>

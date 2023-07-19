@@ -139,7 +139,7 @@ img[usemap] {
     height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .overlay-content {
         gap: 16px;
         padding: 16px;

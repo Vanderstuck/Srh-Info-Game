@@ -56,7 +56,7 @@ function init() {
       for (var i = 0; i < gameItems.length; i++) {
         itemImages[i].style.opacity = "0";
       }      
-    }, 1000)
+    }, 400)
   }, 5000);
 }
 

@@ -486,3 +486,16 @@ a {
     background-color: var(--primary_toned);
     cursor: pointer;
 }
+
+.kontakt {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(0, 105, 153, .95);
+    color: white;
+    border-radius: 16px 16px 0 16px;
+    padding: 15px;
+    z-index: 1;
+    text-decoration: none;
+    width: auto;
+}
